@@ -73,17 +73,13 @@ fmt.Println(num1 + num2)
 
 ``` golang
 fmt.Println("true && false =", true && false)
-
 fmt.Println("true || false =", true || false)
-
 fmt.Println("!true", !true)
 ```
 
 #### Relational Operators
 
-``` golang
 `==` `!=` `<` `>` `<=` `>=`
-```
 
 ## Loops
 
