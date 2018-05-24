@@ -106,7 +106,7 @@ if yourAge >= 16 {
 }
 
 // Go exits when the first condition is true
-// In this example, the else if is not evaluated
+// In this example, the `else if` is not evaluated
 yourAge := 18
 if yourAge >= 16 {
   fmt.Println("You can drive")
@@ -135,4 +135,35 @@ favnums2[1] = 78557
 favnums2[2] = 691
 favnums2[3] = 3.141
 favnums2[4] = 1.618
+
+fmt.Println(favNums2[3])
+
+favNums3 := [5]float64 {1, 2, 3, 4, 5}
+for i, value := range favNums3 {
+  fmt.Println(value, i)
+}
+
+// Index positions hidden
+favNums3 := [5]float64 {1, 2, 3, 4, 5}
+for _, value := range favNums3 {
+  fmt.Println(value)
+}
 ```
+
+## Slices
+
+``` golang
+numSlice := []int {5, 4, 3, 2, 1}
+numSlice2 := numSlice[3:5]
+fmt.Println("numSlice2[0] =", numSlice2[0]) // returns 2
+
+// Implicit start from zero
+fmt.Println("numSlice2[:2] =", numSlice2[:2]) // returns [2 1]
+
+// Implicit return all
+fmt.Println("numSlice2[0:] =", numSlice2[0:])
+```
+
+## Research
+
+- https://medium.com/exploring-code/why-should-you-learn-go-f607681fad65
